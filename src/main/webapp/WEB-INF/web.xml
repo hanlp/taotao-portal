@@ -5,7 +5,7 @@
 	id="taotao" version="2.5">
 	<display-name>taotao-portal</display-name>
 	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
 	<!-- 加载spring容器 -->
 	<context-param>
@@ -46,6 +46,11 @@
 		<servlet-name>taotao-portal</servlet-name>
 		<!-- 过来所有的文件所有的请求 -->
 		<url-pattern>*.html</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>taotao-portal</servlet-name>
+		<!-- 过来所有的文件所有的请求 -->
+		<url-pattern>*.action</url-pattern>
 	</servlet-mapping>
 	
 </web-app>
